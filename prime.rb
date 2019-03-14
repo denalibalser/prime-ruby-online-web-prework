@@ -1,9 +1,8 @@
-def prime?(integer)
- (2..integer - 1).each do |x|
-  if (integer % x) == 0
-   return false
-  else
-   return true
+def is_prime(num)
+  n = 2
+  while n < num
+    return false if num % n == 0
+    n += 1
   end
-end
+  true
 end
